@@ -24,7 +24,7 @@ class Dot:
     except:
       return 0
       
-  def save_json(self, file, mode):
+  def save_json(self, file, mode, indent=2):
     try:
       with open(file, mode) as f:
         s = '{'
@@ -35,7 +35,7 @@ class Dot:
         s = ''.join(s)
         s += '}'
         s = json.loads(s)
-        json.dump(s, f)
+        json.dump(s, f, indent=indent)
       return 1
     except:
       return 0

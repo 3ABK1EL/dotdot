@@ -6,5 +6,5 @@ setup(
   version='1.0.0',
   author='3ABK1EL',
   author_email='None@None.net',
-  packages=['.']
+  packages=['dotdot']
 )
